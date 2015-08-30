@@ -16,7 +16,7 @@
 /tmp
 
 # grunt
-/vendor/assets/bower_components/bootstrap/node_modules
+# /vendor/assets/bower_components/bootstrap/node_modules
 
 # Ignore application configuration
 /config/application.yml

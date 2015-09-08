@@ -26,15 +26,14 @@
 </header>
 <!-- /header -->
 <main class="container">
-<div class="divider"></div>
 <div class="section" id="Tab">
   <div class="row">
     <div class="col s12">
       <ul class="tabs">
-        <li class="tab col s3"><a href="#test1">Test 1</a></li>
-        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab col s3"><a href="#test1">Tab 1</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Tab 2</a></li>
         <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
-        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+        <li class="tab col s3"><a href="#test4">Tab 4</a></li>
       </ul>
     </div>
   </div>
@@ -43,24 +42,28 @@
   <h3>Typography</h3>
   <div class="row">
     <div class="col s6">
-      <h5>Header</h5>
-      <div class="card-panel  grey lighten-3">
+      <h4>Header &  Paragraph</h4>
+      <div class="card-panel">
+        <h1>Heading h1</h1>
+        <h2>Heading h2</h2>
         <h3>Heading h3</h3>
         <h4>Heading h4</h4>
         <h5>Heading h5</h5>
         <h6>Heading h6</h6>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
       </div>
     </div>
     <div class="col s6">
-      <h5>Blockquotes</h5>
+      <h4>Blockquotes</h4>
       <blockquote>
         This is an example quotation that uses the blockquote tag.
       </blockquote>
       <div class="divider"></div>
-      <h5>Flow Text</h5>
+      <h4>Flow Text</h4>
       <a class="waves-effect waves-light btn" id="flow-text-btn">Toggle Flow Text</a>
       <div class="card-panel">
-        <p id="flow-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+        <p id="flow-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, </br>
+          私は事実まあその附与式というのの後があるますござい。とうとう当時に附随士はあにこの経過たんなどにして来たがは教育掘りなくますと、それだけにもありんですでしょう。行儀で聞かなはずもどうも多数にはたしてましうます。</p>
       </div>
     </div>
   </div>
@@ -88,7 +91,7 @@
           <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
           <label for="icon_prefix2">Text Area</label>
         </div>
-        <div class="input-field col s2">
+        <div class="input-field col s3">
           <select>
             <option value="" disabled selected>Choose your option</option>
             <option value="1">Option 1</option>
@@ -117,8 +120,8 @@
         </div>
         <div class="col s3">
           <p>
-            <input type="checkbox" id="test5" />
-            <label for="test5">Red</label>
+            <input type="checkbox" id="test4" />
+            <label for="test4">Red</label>
           </p>
           <p>
             <input type="checkbox" id="test6" checked="checked" />
@@ -137,7 +140,7 @@
             <label for="test8">Brown</label>
           </p>
         </div>
-        <div class="s3">
+        <div class="s2">
           <div class="switch">
             <label>
               Off
@@ -174,111 +177,127 @@
   <div class="section" id="button">
     <h3>Button</h3>
     <div class="row">
-      <div class="col s2">
-        <a class="waves-effect waves-light btn"><i class="material-icons right">play_circle_outline</i>button</a>
-      </div>
-      <div class="col s2">
-        <a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">add</i></a>
-      </div>
-      <div class="col s2">
-        <!-- Dropdown Trigger -->
-        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
-        <!-- Dropdown Structure -->
-        <ul id='dropdown1' class='dropdown-content'>
-          <li><a href="#!">one</a></li>
-          <li><a href="#!">two</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">three</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s3">
-        <!-- Modal Trigger -->
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal ">
-          <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+      <div class="col s6">
+        <div class="row">
+          <div class="col s12">
+            <a class="waves-effect waves-light btn"><i class="material-icons right">play_circle_outline</i>button</a>
           </div>
-          <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">three</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <a class="btn tooltipped" data-position="bottom" data-delay="40" data-tooltip="I am tooltip">Hover me!</a>
           </div>
         </div>
       </div>
-      <div class="col s3">
-        <a class="waves-effect waves-light btn" onclick="Materialize.toast('<span>Item Deleted</span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)">Toast!</a>
-      </div>
-      <div class="col s3">
-        <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip">Hover me!</a>
+      <div class="col s6">
+        <div class="row">
+          <div class="col s12">
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal ">
+              <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect btn-flat">Agree</a>
+                <a href="#!" class=" modal-action modal-close waves-effect btn-flat">Cancel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <a class="waves-effect waves-light btn" onclick="Materialize.toast('<span>Item Deleted</span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 4000)">Toast!</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <a class="btn-floating btn waves-effect waves-light"><i class="material-icons">add</i></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="divider"></div>
+</div>
+<div class="divider"></div>
 </div>
 <div class="section" id="collections">
-  <h3>List</h3>
-  <div class="collection">
-    <a href="#!" class="collection-item">Alvin</a>
-    <a href="#!" class="collection-item active">Alvin</a>
-    <a href="#!" class="collection-item">Alvin</a>
-    <a href="#!" class="collection-item">Alvin</a>
-  </div>
-  <ul class="collapsible" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-  </ul>
-  <div class="divider"></div>
+<h3>List</h3>
+<div class="collection">
+  <a href="#!" class="collection-item">Alvin</a>
+  <a href="#!" class="collection-item active">Alvin</a>
+  <a href="#!" class="collection-item">Alvin</a>
+  <a href="#!" class="collection-item">Alvin</a>
+</div>
+<ul class="collapsible" data-collapsible="accordion">
+  <li>
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+</ul>
+<div class="divider"></div>
 </div>
 <div class="section" id="table">
-  <h3>Table</h3>
-  <table class="striped hoverable">
-    <thead>
-      <tr>
-        <th data-field="id">Name</th>
-        <th data-field="name">Item Name</th>
-        <th data-field="price">Item Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Alvin</td>
-        <td>Eclair</td>
-        <td>$0.87</td>
-      </tr>
-      <tr>
-        <td>Alan</td>
-        <td>Jellybean</td>
-        <td>$3.76</td>
-      </tr>
-      <tr>
-        <td>Jonathan</td>
-        <td>Lollipop</td>
-        <td>$7.00</td>
-      </tr>
-    </tbody>
-  </table>
-  <ul class="pagination">
-    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-    <li class="active"><a href="#!">1</a></li>
-    <li class="waves-effect"><a href="#!">2</a></li>
-    <li class="waves-effect"><a href="#!">3</a></li>
-    <li class="waves-effect"><a href="#!">4</a></li>
-    <li class="waves-effect"><a href="#!">5</a></li>
-    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-  </ul>
-  <div class="divider"></div>
+<h3>Table</h3>
+<table class="striped hoverable">
+  <thead>
+    <tr>
+      <th data-field="id">Name</th>
+      <th data-field="name">Item Name</th>
+      <th data-field="price">Item Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alvin</td>
+      <td>Eclair</td>
+      <td>$0.87</td>
+    </tr>
+    <tr>
+      <td>Alan</td>
+      <td>Jellybean</td>
+      <td>$3.76</td>
+    </tr>
+    <tr>
+      <td>Jonathan</td>
+      <td>Lollipop</td>
+      <td>$7.00</td>
+    </tr>
+  </tbody>
+</table>
+<ul class="pagination">
+  <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+  <li class="active"><a href="#!">1</a></li>
+  <li class="waves-effect"><a href="#!">2</a></li>
+  <li class="waves-effect"><a href="#!">3</a></li>
+  <li class="waves-effect"><a href="#!">4</a></li>
+  <li class="waves-effect"><a href="#!">4</a></li>
+  <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+</ul>
+<div class="divider"></div>
 </div>
 <!-- /table  -->
 </main>

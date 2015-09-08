@@ -1,0 +1,284 @@
+// Layout
+footer {
+    margin-bottom: 200px;
+}
+
+// Web Font
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800,600);
+
+// Font
+body {
+    font-family: 'Open Sans',  sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+.brand-logo {
+    font-weight: 900;
+}
+
+.tabs .tab a {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+// Color
+$key-color: #005C7A;
+$key-color-lt: rgba(0, 92, 122, 0.7);
+$key-color-ul: rgba(0, 92, 122, 0.3);
+$accent-color: #008AB8;
+$base-color: #F4F5F6;
+$sub-color: white;
+$sub-color-gr: #eceff1;
+$text-color: #7D7D7D;
+$text-color-lt: white;
+$text-color-strong: #37474f;
+
+// // 浅葱
+// $key-color: #33A6B8;
+// $key-color-lt: rgba(51, 166, 184, 0.7);
+// $key-color-ul: rgba(51, 166, 184, 0.3);
+// $accent-color: #81C7D4;
+// $base-color: #F4F5F6;
+// $sub-color: white;
+// $sub-color-gr: #eceff1;
+// $text-color: #7D7D7D;
+// $text-color-lt: white;
+// $text-color-strong: #0C4842;
+
+// // 墨
+// $key-color: #58B2DC;
+// $key-color-lt: rgba(88, 178, 220, 0.7);
+// $key-color-ul: rgba(88, 178, 220, 0.3);
+// $accent-color: #FEDFE1;
+// $base-color: #1C1C1C;
+// $sub-color: #0C0C0C;
+// $sub-color-gr: #eceff1;
+// $text-color: #7D7D7D;
+// $text-color-lt: white;
+// $text-color-strong: white;
+
+
+// body
+$body-bg-color: $base-color;
+$body-text-color: $text-color;
+$divider-color: #e0e0e0;
+
+// panel
+$panel-bg-color: $sub-color;
+$panel-text-color: $text-color;
+
+// nav bar
+$nav-bg-color: $key-color;
+$nav-bg-color-hover: $accent-color;
+
+// heading
+$h-large-color: $text-color-strong;
+$h-small-color: $text-color;
+
+// btn
+$btn-bg-color: $key-color;
+$btn-bg-color-hover: $accent-color;
+$btn-text-color: $text-color-lt;
+$btn-text-color-hover: $text-color-lt;
+
+// blockquote
+$quote-color: $key-color;
+
+// tab
+$tab-bg-color: $base-color;
+$tab-bg-color-active: $key-color;
+$tab-text-color: $key-color;
+$tab-text-color-hover: $key-color-lt;
+$tab-text-color-disabled: $key-color-ul;
+
+// form
+$prefix-text-color-hover: $key-color;
+$input-text-color-hover: $accent-color;
+$check-bg-color: $key-color;
+$check-bg-color-disabled: $key-color-ul;
+
+// lsit
+$list-bg-color: $sub-color;
+$list-text-color: $text-color;
+$list-link-text-color: $accent-color;
+$list-bg-color-hover: $key-color-ul;
+$list-text-color-hover: $text-color;
+$list-link-text-color-hover: $accent-color;
+$list-bg-color-active: $key-color-lt;
+$list-text-color-active: $text-color;
+$list-link-text-color-active: $text-color-lt;
+
+// table
+$table-bg-color: $sub-color;
+$table-text-color: $text-color;
+$table-th-bg-color: $key-color;
+$table-th-text-color: $text-color-lt;
+$table-th-bg-color-striped: $sub-color-gr;
+$table-th-text-color-striped: $text-color;
+$table-th-bg-color-hover: $key-color-ul;
+$table-th-text-color-hover: $text-color;
+$page-bg-color-hover: $key-color-ul;
+$page-bg-color-active: $key-color;
+
+// Color Setting
+body {
+    background-color: $body-bg-color;
+    color: $body-text-color;
+}
+
+.divider {
+    background-color: $divider-color;
+    height: 2px;
+}
+
+.card-panel {
+    background-color: $panel-bg-color;
+    color: $panel-text-color;
+}
+
+nav {
+    background-color: $nav-bg-color;
+}
+
+nav ul li:hover, nav ul li.active {
+    background-color: $nav-bg-color-hover;
+}
+
+h1,
+h2,
+h3 {
+    color: $h-large-color;
+}
+
+.btn,
+.btn-large,
+.btn-floating {
+    background-color: $btn-bg-color;
+    color: $btn-text-color;
+}
+
+.btn:hover,
+.btn-large:hover {
+    background-color: $btn-bg-color-hover;
+    color: $btn-text-color-hover;
+}
+
+blockquote {
+    border-left-color: $quote-color;
+}
+
+.input-field .prefix.active {
+    color: $prefix-text-color-hover;
+}
+
+.tabs {
+    background-color: $tab-bg-color;
+}
+
+.tabs .tab a {
+    color: $tab-text-color;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:hover {
+    color: $tab-text-color-hover;
+}
+
+.tabs .tab.disabled a {
+    color: $tab-text-color-disabled;
+}
+
+.tabs .indicator {
+    background-color: $tab-bg-color-active;
+}
+
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: $input-text-color-hover;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:after,
+[type="checkbox"].filled-in:checked + label:after,
+.switch label input[type=checkbox]:checked + .lever:after {
+    background-color: $check-bg-color;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:after,
+[type="checkbox"].filled-in:checked + label:after,
+[type="radio"].with-gap:checked + label:before {
+    border-color: $check-bg-color;
+}
+
+[type="checkbox"]:checked + label:before {
+    border-right-color: $check-bg-color;
+    border-bottom-color: $check-bg-color;
+}
+
+.switch label input[type=checkbox]:checked + .lever {
+    background-color: $check-bg-color-disabled;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: $list-link-text-color;
+}
+
+.collection a.collection-item {
+    color: $list-link-text-color;
+}
+
+.collection a.collection-item:not(.active):hover {
+    background-color: $list-bg-color-hover;
+    color: $list-link-text-color-hover;
+}
+
+.collection .collection-item.active {
+    background-color: $list-bg-color-active;
+    color: $list-link-text-color-active;
+}
+
+.collapsible-header:hover {
+    background-color: $list-bg-color-hover;
+}
+
+table {
+    background-color: $table-bg-color;
+}
+
+table th {
+    background-color: $table-th-bg-color;
+    color: $table-th-text-color;
+}
+
+table.striped > tbody > tr:nth-child(odd) {
+    background-color: $table-th-bg-color-striped;
+}
+
+table.hoverable > tbody > tr:hover {
+    background-color: $table-th-bg-color-hover;
+    color: $table-th-text-color-hover;
+}
+
+.pagination li:hover {
+    background-color: $page-bg-color-hover;
+}
+
+.pagination li.active {
+    background-color: $page-bg-color-active;
+}

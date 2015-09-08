@@ -14,3 +14,5 @@
 //= require underscore
 //= require materialize
 //= require turbolinks
+//= require common.js
+

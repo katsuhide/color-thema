@@ -12,5 +12,8 @@
  *
  *= require_self
  *= require materialize
- *= require common.css
+ *= require common
+  *= require _mapping
+ *= require default
+ *= require bloomberg
  */

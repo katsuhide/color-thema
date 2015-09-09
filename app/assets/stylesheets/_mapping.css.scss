@@ -1,0 +1,178 @@
+@mixin mapping {
+    .divider {
+        background-color: $divider-color;
+        height: 2px;
+    }
+
+    .card-panel {
+        background-color: $panel-bg-color;
+        color: $panel-text-color;
+    }
+
+    nav {
+        background-color: $nav-bg-color;
+    }
+
+    nav ul li:hover,
+    nav ul li.active {
+        background-color: $nav-bg-color-hover;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: $h-large-color;
+    }
+
+    .btn,
+    .btn-large,
+    .btn-floating {
+        background-color: $btn-bg-color;
+        color: $btn-text-color;
+    }
+
+    .btn:hover,
+    .btn-large:hover {
+        background-color: $btn-bg-color-hover;
+        color: $btn-text-color-hover;
+    }
+
+    blockquote {
+        border-left-color: $quote-color;
+    }
+
+    .input-field .prefix.active {
+        color: $prefix-text-color-hover;
+    }
+
+    .tabs {
+        background-color: $tab-bg-color;
+    }
+
+    .tabs .tab a {
+        color: $tab-text-color;
+    }
+
+    .tabs .tab a:focus,
+    .tabs .tab a:hover {
+        color: $tab-text-color-hover;
+    }
+
+    .tabs .tab.disabled a {
+        color: $tab-text-color-disabled;
+    }
+
+    .tabs .indicator {
+        background-color: $tab-bg-color-active;
+    }
+
+    input[type=text]:focus:not([readonly]) + label,
+    input[type=password]:focus:not([readonly]) + label,
+    input[type=email]:focus:not([readonly]) + label,
+    input[type=url]:focus:not([readonly]) + label,
+    input[type=time]:focus:not([readonly]) + label,
+    input[type=date]:focus:not([readonly]) + label,
+    input[type=datetime-local]:focus:not([readonly]) + label,
+    input[type=tel]:focus:not([readonly]) + label,
+    input[type=number]:focus:not([readonly]) + label,
+    input[type=search]:focus:not([readonly]) + label,
+    textarea.materialize-textarea:focus:not([readonly]) + label {
+        color: $input-text-color-hover;
+    }
+
+    [type="radio"]:checked + label:after,
+    [type="radio"].with-gap:checked + label:after,
+    [type="checkbox"].filled-in:checked + label:after,
+    .switch label input[type=checkbox]:checked + .lever:after {
+        background-color: $check-bg-color;
+    }
+
+    [type="radio"]:checked + label:after,
+    [type="radio"].with-gap:checked + label:after,
+    [type="checkbox"].filled-in:checked + label:after,
+    [type="radio"].with-gap:checked + label:before {
+        border-color: $check-bg-color;
+    }
+
+    [type="checkbox"]:checked + label:before {
+        border-right-color: $check-bg-color;
+        border-bottom-color: $check-bg-color;
+    }
+
+    .switch label input[type=checkbox]:checked + .lever {
+        background-color: $check-bg-color-disabled;
+    }
+
+    .dropdown-content {
+        background-color: $list-bg-color;
+    }
+
+    .dropdown-content li > a, .dropdown-content li > span {
+        color: $list-link-text-color;
+    }
+
+    .collapsible,
+    .collection {
+        border-color: $list-sr-color;
+    }
+
+    .collapsible-body,
+    .collection .collection-item {
+        background-color: $list-bg-color;
+        border-color: $list-br-color;
+    }
+
+    .collapsible-header,
+    .collection a.collection-item {
+        color: $list-link-text-color;
+    }
+
+    .collection a.collection-item:not(.active):hover {
+        background-color: $list-bg-color-hover;
+        color: $list-link-text-color-hover;
+    }
+
+    .collection .collection-item.active {
+        background-color: $list-bg-color-active;
+        color: $list-link-text-color-active;
+    }
+
+    .collapsible-header {
+        background-color: $list-th-bg-color;
+        border-color: $list-br-color;
+    }
+
+    .collapsible-header:hover {
+        background-color: $list-bg-color-hover;
+    }
+
+    table {
+        background-color: $table-bg-color;
+    }
+
+    table th {
+        background-color: $table-th-bg-color;
+        color: $table-th-text-color;
+    }
+
+    table.striped > tbody > tr:nth-child(odd) {
+        background-color: $table-tr-bg-color-striped;
+    }
+
+    table.hoverable > tbody > tr:hover {
+        background-color: $table-tr-bg-color-hover;
+        color: $table-tr-text-color-hover;
+    }
+
+    .pagination li a {
+        color: $page-text-color;
+    }
+
+    .pagination li:hover {
+        background-color: $page-bg-color-hover;
+    }
+
+    .pagination li.active {
+        background-color: $page-bg-color-active;
+    }
+}

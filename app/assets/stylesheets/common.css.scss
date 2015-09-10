@@ -5,10 +5,15 @@ footer {
 
 // Web Font
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800,600);
+@import url(http://fonts.googleapis.com/css?family=Limelight);
 
 // Font
 body {
     font-family: 'Open Sans',  sans-serif;
+}
+
+.brand-logo {
+    font-family: 'Limelight', cursive;
 }
 
 h1,
@@ -25,4 +30,8 @@ h4 {
 .tabs .tab a {
     font-weight: 900;
     font-size: 1.5rem;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    font-size: 1rem;
 }

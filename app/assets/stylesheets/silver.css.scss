@@ -1,16 +1,16 @@
-// Default Color
-$key-color: #005C7A;
-$key-color-lt: rgba(0, 92, 122, 0.7);
-$key-color-ul: rgba(0, 92, 122, 0.3);
-$accent-color: #008AB8;
-$accent-color-lt: rgba(0, 138, 184, 0.7);
-$accent-color-ul: rgba(0, 138, 184, 0.3);
-$base-color: #F4F5F6;
-$sub-color: white;
-$sub-color-strong: #eceff1;
-$text-color: #7D7D7D;
-$text-color-lt: white;
-$text-color-strong: #37474f;
+// Black Blue
+$key-color: #bdbdbd;
+$key-color-lt: rgba(238, 238, 238, 0.7);
+$key-color-ul: rgba(238, 238, 238, 0.3);
+$accent-color: #4fe8f7;
+$accent-color-lt: #8AF0F9;
+$accent-color-ul: #C5F8FC;
+$base-color: #333333;
+$sub-color: #292929;
+$sub-color-strong: #1C1C1C ;
+$text-color: #ADADAD;
+$text-color-lt: #525252;
+$text-color-strong: white;
 
 // Addtional Color
 // body
@@ -32,9 +32,17 @@ $h-small-color: $text-color;
 
 // btn
 $btn-bg-color: $key-color;
-$btn-bg-color-hover: $accent-color;
+$btn-bg-color-hover: $key-color-lt;
 $btn-text-color: $text-color-lt;
 $btn-text-color-hover: $text-color-lt;
+
+// tooltip
+$tooltip-text-color: $accent-color;
+
+// toast
+$toast-bg-color: $base-color;
+$toast-text-color: $text-color;
+$toast-link-text-color: $accent-color;
 
 // blockquote
 $quote-color: $key-color;
@@ -50,19 +58,20 @@ $tab-text-color-disabled: $key-color-ul;
 $prefix-text-color-hover: $key-color;
 $input-text-color-hover: $key-color;
 $check-bg-color: $key-color;
+$check-text-color: $text-color-lt;
 $check-bg-color-disabled: $key-color-ul;
 
 // lsit
 $list-bg-color: $sub-color;
-$list-sr-color: $base-color;
-$list-br-color: $sub-color-strong;
+$list-sr-color: $sub-color;
+$list-br-color: $base-color;
 $list-text-color: $text-color;
 $list-th-bg-color: $sub-color;
 $list-link-text-color: $accent-color;
-$list-bg-color-hover: $key-color-ul;
+$list-bg-color-hover: $accent-color-ul;
 $list-text-color-hover: $text-color;
 $list-link-text-color-hover: $accent-color;
-$list-bg-color-active: $key-color-lt;
+$list-bg-color-active: $accent-color-lt;
 $list-text-color-active: $text-color;
 $list-link-text-color-active: $text-color-lt;
 
@@ -82,11 +91,11 @@ $page-bg-color-active: $accent-color;
 // Setting
 @import "mapping";
 
-body#default {
+body#silver {
     background-color: $body-bg-color;
     color: $body-text-color;
 }
 
-#default {
+#silver {
     @include mapping;
 }

@@ -31,10 +31,31 @@
         color: $btn-text-color;
     }
 
+    .btn-floating i {
+        color: $btn-text-color;
+    }
+
     .btn:hover,
     .btn-large:hover {
         background-color: $btn-bg-color-hover;
         color: $btn-text-color-hover;
+    }
+
+    .material-tooltip {
+        color: $tooltip-text-color;
+    }
+
+    .backdrop {
+        background-color: transparent;
+    }
+
+    .toast {
+        background-color: $toast-bg-color;
+        color: $toast-text-color;
+    }
+
+    .toast a {
+        color: $toast-link-text-color;
     }
 
     blockquote {
@@ -86,6 +107,10 @@
     .switch label input[type=checkbox]:checked + .lever:after {
         background-color: $check-bg-color;
     }
+    [type="checkbox"].filled-in:checked + label:before {
+        border-right-color: $check-text-color;
+        border-bottom-color: $check-text-color;
+    }
 
     [type="radio"]:checked + label:after,
     [type="radio"].with-gap:checked + label:after,
@@ -105,6 +130,14 @@
 
     .dropdown-content {
         background-color: $list-bg-color;
+    }
+
+    .dropdown-content li:hover {
+        background-color: $list-bg-color-hover;
+    }
+
+    .dropdown-content li.active {
+        background-color: $list-bg-color-active;
     }
 
     .dropdown-content li > a, .dropdown-content li > span {

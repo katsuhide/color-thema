@@ -46,4 +46,8 @@ group :development do
   gem 'spring'
 end
 
+# for windows
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+
+# for rake secret
+gem 'rb-readline'

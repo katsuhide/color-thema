@@ -79,6 +79,7 @@ Rails.application.configure do
 
   # Add the fonts path
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  config.assets.paths << Rails.root.join('app', 'assets', 'font')
 
   # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .woff2 .ttf )

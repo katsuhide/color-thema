@@ -23,5 +23,5 @@ test:
 production:
   # <<: *default
   # database: db/production.sqlite3
-  adapter: sqlite3
+  adapter: postgresql
   database: color_thema_production

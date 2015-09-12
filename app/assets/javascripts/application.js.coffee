@@ -15,4 +15,3 @@
 //= require materialize
 //= require turbolinks
 //= require common
-

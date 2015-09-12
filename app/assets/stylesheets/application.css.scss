@@ -11,9 +11,9 @@
  * file per style scope.
  *
  *= require_self
- *= require materialize/sass/materialize.scss
+ *= require materialize
  *= require common
-  *= require _mapping
+ *= require _mapping
  *= require ai
  *= require bloomberg
  *= require silver

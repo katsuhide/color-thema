@@ -78,9 +78,9 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Add the fonts path
-  config.assets.paths << Rails.root.join('app', 'assets', 'font')
+  # config.assets.paths << Rails.root.join('app', 'assets', 'font')
 
   # Precompile additional assets
-  config.assets.precompile += %w( .svg .eot .woff .woff2 .ttf )
+  # config.assets.precompile += %w( .svg .eot .woff .woff2 .ttf )
 
 end

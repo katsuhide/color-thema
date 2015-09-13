@@ -16,6 +16,9 @@ $ ->
     $("#style-silver").click ->
       $("body").attr "id", "silver"
 
+    $("#style-neon").click ->
+      $("body").attr "id", "neon"
+
 $(document).ready ->
   $(".button-collapse").sideNav()
   $('select').material_select()

@@ -1,0 +1,111 @@
+// Black Blue
+$key-color: #384877;
+$key-color-lt: #2A4D95;
+$key-color-ul: #5963A3;
+$accent-color: #D05DA1;
+$accent-color-lt: #D86CF1;
+$accent-color-ul: #9B93DD;
+$base-color: #333333;
+$sub-color: #292929;
+$sub-color-strong: #1C1C1C ;
+$text-color: #ADADAD;
+$text-color-lt: #525252;
+$text-color-strong: white;
+
+// Addtional Color
+// body
+$body-bg-color: $base-color;
+$body-text-color: $text-color;
+$divider-color: $sub-color-strong;
+
+// panel
+$panel-bg-color: $sub-color;
+$panel-text-color: $text-color;
+
+// nav bar
+$nav-bg-color: $key-color;
+$nav-bg-color-hover: $accent-color;
+
+// heading
+$h-large-color: $text-color-strong;
+$h-small-color: $text-color;
+
+// btn
+$btn-bg-color: $key-color;
+$btn-bg-color-hover: $key-color-lt;
+$btn-text-color: $text-color-lt;
+$btn-text-color-hover: $text-color-lt;
+
+// tooltip
+$tooltip-text-color: $accent-color;
+
+// toast
+$toast-bg-color: $base-color;
+$toast-text-color: $text-color;
+$toast-link-text-color: $accent-color;
+
+// blockquote
+$quote-color: $key-color;
+
+// tab
+$tab-bg-color: $base-color;
+$tab-bg-color-active: $key-color;
+$tab-text-color: $key-color;
+$tab-text-color-hover: $key-color-lt;
+$tab-text-color-disabled: $key-color-ul;
+
+// form
+$prefix-text-color-hover: $key-color;
+$input-text-color-hover: $key-color;
+$check-bg-color: $key-color;
+$check-text-color: $text-color-lt;
+$check-bg-color-disabled: $key-color-ul;
+
+// lsit
+$list-bg-color: $sub-color;
+$list-sr-color: $sub-color;
+$list-br-color: $base-color;
+$list-text-color: $text-color;
+$list-th-bg-color: $sub-color;
+$list-link-text-color: $accent-color;
+$list-bg-color-hover: $accent-color-ul;
+$list-text-color-hover: $text-color;
+$list-link-text-color-hover: $accent-color;
+$list-bg-color-active: $accent-color-lt;
+$list-text-color-active: $text-color;
+$list-link-text-color-active: $text-color-lt;
+
+// table
+$table-bg-color: $sub-color;
+$table-text-color: $text-color;
+$table-th-bg-color: $key-color;
+$table-th-text-color: $text-color-lt;
+$table-tr-bg-color-striped: $sub-color-strong;
+$table-tr-text-color-striped: $text-color;
+$table-tr-bg-color-hover: $accent-color-ul;
+$table-tr-text-color-hover: $text-color;
+$page-text-color: $text-color;
+$page-bg-color-hover: $accent-color-ul;
+$page-bg-color-active: $accent-color;
+
+// Setting
+@import "mapping";
+
+body#neon {
+    // background-color: $body-bg-color;
+    color: $body-text-color;
+}
+
+body#neon {
+  // background: -webkit-linear-gradient(45deg, hsl(244, 26%, 19%) 0%, transparent 70%), -webkit-linear-gradient(135deg, hsl(269, 42%, 18%) 10%, transparent 80%), -webkit-linear-gradient(225deg, hsl(223, 51%, 20%) 10%, transparent 80%), -webkit-linear-gradient(315deg, hsl(261, 30%, 32%) 50%, transparent 100%); background: -ms-linear-gradient(45deg, hsl(244, 26%, 19%) 0%, transparent 70%), -ms-linear-gradient(135deg, hsl(269, 42%, 18%) 10%, transparent 80%), -ms-linear-gradient(225deg, hsl(223, 51%, 20%) 10%, transparent 80%), -ms-linear-gradient(315deg, hsl(261, 30%, 32%) 50%, transparent 100%); background: linear-gradient(45deg, hsl(244, 26%, 19%) 0%, transparent 70%), linear-gradient(135deg, hsl(269, 42%, 18%) 10%, transparent 80%), linear-gradient(225deg, hsl(223, 51%, 20%) 10%, transparent 80%), linear-gradient(315deg, hsl(261, 30%, 32%) 50%, transparent 100%);
+  // background: -webkit-linear-gradient(45deg, hsl(240, 26%, 29%) 0%, transparent 70%), -webkit-linear-gradient(135deg, hsl(269, 42%, 35%) 10%, transparent 80%), -webkit-linear-gradient(225deg, hsl(223, 51%, 22%) 10%, transparent 80%), -webkit-linear-gradient(315deg, hsl(261, 30%, 48%) 50%, transparent 100%); background: -ms-linear-gradient(45deg, hsl(240, 26%, 29%) 0%, transparent 70%), -ms-linear-gradient(135deg, hsl(269, 42%, 35%) 10%, transparent 80%), -ms-linear-gradient(225deg, hsl(223, 51%, 22%) 10%, transparent 80%), -ms-linear-gradient(315deg, hsl(261, 30%, 48%) 50%, transparent 100%); background: linear-gradient(45deg, hsl(240, 26%, 29%) 0%, transparent 70%), linear-gradient(135deg, hsl(269, 42%, 35%) 10%, transparent 80%), linear-gradient(225deg, hsl(223, 51%, 22%) 10%, transparent 80%), linear-gradient(315deg, hsl(261, 30%, 48%) 50%, transparent 100%);
+  // background: -webkit-linear-gradient(45deg, hsl(198, 6%, 22%) 0%, transparent 70%), -webkit-linear-gradient(135deg, hsl(265, 42%, 35%) 10%, transparent 80%), -webkit-linear-gradient(225deg, hsl(236, 51%, 22%) 10%, transparent 80%), -webkit-linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%); background: -ms-linear-gradient(45deg, hsl(198, 6%, 22%) 0%, transparent 70%), -ms-linear-gradient(135deg, hsl(265, 42%, 35%) 10%, transparent 80%), -ms-linear-gradient(225deg, hsl(236, 51%, 22%) 10%, transparent 80%), -ms-linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%); background: linear-gradient(45deg, hsl(198, 6%, 22%) 0%, transparent 70%), linear-gradient(135deg, hsl(265, 42%, 35%) 10%, transparent 80%), linear-gradient(225deg, hsl(236, 51%, 22%) 10%, transparent 80%), linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%);
+background: -webkit-linear-gradient(45deg, hsl(198, 100%, 21%) 0%, transparent 70%), -webkit-linear-gradient(135deg, hsl(265, 42%, 54%) 10%, transparent 80%), -webkit-linear-gradient(225deg, hsl(236, 51%, 29%) 10%, transparent 80%), -webkit-linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%); background: -ms-linear-gradient(45deg, hsl(198, 100%, 21%) 0%, transparent 70%), -ms-linear-gradient(135deg, hsl(265, 42%, 54%) 10%, transparent 80%), -ms-linear-gradient(225deg, hsl(236, 51%, 29%) 10%, transparent 80%), -ms-linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%); background: linear-gradient(45deg, hsl(198, 100%, 21%) 0%, transparent 70%), linear-gradient(135deg, hsl(265, 42%, 54%) 10%, transparent 80%), linear-gradient(225deg, hsl(236, 51%, 29%) 10%, transparent 80%), linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%);
+
+   }
+
+
+
+#neon {
+    @include mapping;
+}

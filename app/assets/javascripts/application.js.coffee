@@ -13,5 +13,6 @@
 //= require jquery
 //= require underscore
 //= require materialize
-//= require turbolinks
+//= require isIe
 //= require common
+//= require turbolinks

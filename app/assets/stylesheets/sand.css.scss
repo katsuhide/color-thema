@@ -1,4 +1,4 @@
-// Black Blue
+// Sand
 $key-strong-color: #E64A19;
 $key-strong-color-lt: #8e6455;
 $key-color: #8e6455;
@@ -27,6 +27,7 @@ $panel-text-color: $text-color;
 // nav bar
 $nav-bg-color: $key-strong-color;
 $nav-bg-color-hover: $key-strong-color-lt;
+$nav-text-color: $text-color-strong;
 
 // heading
 $h-large-color: $text-color-strong;
@@ -57,11 +58,12 @@ $tab-text-color-hover: $key-color-lt;
 $tab-text-color-disabled: $key-color-ul;
 
 // form
+$label-text-color: $text-color;
 $prefix-text-color-hover: $key-color;
 $input-text-color-hover: $key-color;
 $check-bg-color: $key-color;
 $check-text-color: $text-color-lt;
-$check-bg-color-disabled: $key-color-ul;
+$check-bg-color-disabled: $key-color-lt;
 
 // lsit
 $list-bg-color: $sub-color;

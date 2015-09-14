@@ -1,4 +1,6 @@
 // Black Blue
+$key-strong-color: #E64A19;
+$key-strong-color-lt: #8e6455;
 $key-color: #384877;
 $key-color-lt: #2A4D95;
 $key-color-ul: #5963A3;
@@ -7,10 +9,10 @@ $accent-color-lt: #D86CF1;
 $accent-color-ul: #9B93DD;
 $base-color: #333333;
 $sub-color: #292929;
-$sub-color-strong: #1C1C1C ;
-$text-color: #ADADAD;
+$sub-color-strong: #1C1C1C;
+$text-color: #505050;
 $text-color-lt: #525252;
-$text-color-strong: white;
+$text-color-strong: #eb2d6e;
 
 // Addtional Color
 // body
@@ -25,6 +27,7 @@ $panel-text-color: $text-color;
 // nav bar
 $nav-bg-color: $key-color;
 $nav-bg-color-hover: $accent-color;
+$nav-text-color: $text-color-strong;
 
 // heading
 $h-large-color: $text-color-strong;
@@ -55,6 +58,7 @@ $tab-text-color-hover: $key-color-lt;
 $tab-text-color-disabled: $key-color-ul;
 
 // form
+$label-text-color: $text-color;
 $prefix-text-color-hover: $key-color;
 $input-text-color-hover: $key-color;
 $check-bg-color: $key-color;
@@ -93,19 +97,29 @@ $page-bg-color-active: $accent-color;
 
 body#neon {
     // background-color: $body-bg-color;
+    background-image: linear-gradient(0deg, #E5B9CA, #BBDDF7);
     color: $body-text-color;
 }
 
-body#neon {
-  // background: -webkit-linear-gradient(45deg, hsl(244, 26%, 19%) 0%, transparent 70%), -webkit-linear-gradient(135deg, hsl(269, 42%, 18%) 10%, transparent 80%), -webkit-linear-gradient(225deg, hsl(223, 51%, 20%) 10%, transparent 80%), -webkit-linear-gradient(315deg, hsl(261, 30%, 32%) 50%, transparent 100%); background: -ms-linear-gradient(45deg, hsl(244, 26%, 19%) 0%, transparent 70%), -ms-linear-gradient(135deg, hsl(269, 42%, 18%) 10%, transparent 80%), -ms-linear-gradient(225deg, hsl(223, 51%, 20%) 10%, transparent 80%), -ms-linear-gradient(315deg, hsl(261, 30%, 32%) 50%, transparent 100%); background: linear-gradient(45deg, hsl(244, 26%, 19%) 0%, transparent 70%), linear-gradient(135deg, hsl(269, 42%, 18%) 10%, transparent 80%), linear-gradient(225deg, hsl(223, 51%, 20%) 10%, transparent 80%), linear-gradient(315deg, hsl(261, 30%, 32%) 50%, transparent 100%);
-  // background: -webkit-linear-gradient(45deg, hsl(240, 26%, 29%) 0%, transparent 70%), -webkit-linear-gradient(135deg, hsl(269, 42%, 35%) 10%, transparent 80%), -webkit-linear-gradient(225deg, hsl(223, 51%, 22%) 10%, transparent 80%), -webkit-linear-gradient(315deg, hsl(261, 30%, 48%) 50%, transparent 100%); background: -ms-linear-gradient(45deg, hsl(240, 26%, 29%) 0%, transparent 70%), -ms-linear-gradient(135deg, hsl(269, 42%, 35%) 10%, transparent 80%), -ms-linear-gradient(225deg, hsl(223, 51%, 22%) 10%, transparent 80%), -ms-linear-gradient(315deg, hsl(261, 30%, 48%) 50%, transparent 100%); background: linear-gradient(45deg, hsl(240, 26%, 29%) 0%, transparent 70%), linear-gradient(135deg, hsl(269, 42%, 35%) 10%, transparent 80%), linear-gradient(225deg, hsl(223, 51%, 22%) 10%, transparent 80%), linear-gradient(315deg, hsl(261, 30%, 48%) 50%, transparent 100%);
-  // background: -webkit-linear-gradient(45deg, hsl(198, 6%, 22%) 0%, transparent 70%), -webkit-linear-gradient(135deg, hsl(265, 42%, 35%) 10%, transparent 80%), -webkit-linear-gradient(225deg, hsl(236, 51%, 22%) 10%, transparent 80%), -webkit-linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%); background: -ms-linear-gradient(45deg, hsl(198, 6%, 22%) 0%, transparent 70%), -ms-linear-gradient(135deg, hsl(265, 42%, 35%) 10%, transparent 80%), -ms-linear-gradient(225deg, hsl(236, 51%, 22%) 10%, transparent 80%), -ms-linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%); background: linear-gradient(45deg, hsl(198, 6%, 22%) 0%, transparent 70%), linear-gradient(135deg, hsl(265, 42%, 35%) 10%, transparent 80%), linear-gradient(225deg, hsl(236, 51%, 22%) 10%, transparent 80%), linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%);
-background: -webkit-linear-gradient(45deg, hsl(198, 100%, 21%) 0%, transparent 70%), -webkit-linear-gradient(135deg, hsl(265, 42%, 54%) 10%, transparent 80%), -webkit-linear-gradient(225deg, hsl(236, 51%, 29%) 10%, transparent 80%), -webkit-linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%); background: -ms-linear-gradient(45deg, hsl(198, 100%, 21%) 0%, transparent 70%), -ms-linear-gradient(135deg, hsl(265, 42%, 54%) 10%, transparent 80%), -ms-linear-gradient(225deg, hsl(236, 51%, 29%) 10%, transparent 80%), -ms-linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%); background: linear-gradient(45deg, hsl(198, 100%, 21%) 0%, transparent 70%), linear-gradient(135deg, hsl(265, 42%, 54%) 10%, transparent 80%), linear-gradient(225deg, hsl(236, 51%, 29%) 10%, transparent 80%), linear-gradient(315deg, hsl(295, 30%, 48%) 50%, transparent 100%);
-
-   }
-
-
-
 #neon {
     @include mapping;
+}
+
+#neon {
+    // tab
+    .tabs {
+        background: inherit;
+    }
+
+    // nav
+    nav {
+        background: rgba(255, 255, 255, 0.4);
+        border: solid 1px rgba(255, 255, 255, 0.4);
+    }
+
+    // panel
+    .card-panel {
+        background: rgba(255, 255, 255, 0.4);
+        border: solid 1px rgba(255, 255, 255, 0.4);
+    }
 }

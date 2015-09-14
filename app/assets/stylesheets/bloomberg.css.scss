@@ -25,6 +25,7 @@ $panel-text-color: $text-color;
 // nav bar
 $nav-bg-color: $key-color;
 $nav-bg-color-hover: $accent-color;
+$nav-text-color: $text-color-strong;
 
 // heading
 $h-large-color: $text-color-strong;
@@ -55,6 +56,7 @@ $tab-text-color-hover: $key-color-lt;
 $tab-text-color-disabled: $key-color-ul;
 
 // form
+$label-text-color: $text-color;
 $prefix-text-color-hover: $key-color;
 $input-text-color-hover: $key-color;
 $check-bg-color: $key-color;

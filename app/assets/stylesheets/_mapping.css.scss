@@ -13,6 +13,12 @@
         background-color: $nav-bg-color;
     }
 
+    nav .button-collapse,
+    nav ul:not(.side-nav) a,
+    nav .brand-logo {
+        color: $nav-text-color;
+    }
+
     nav ul li:hover,
     nav ul li.active {
         background-color: $nav-bg-color-hover;
@@ -85,6 +91,10 @@
 
     .tabs .indicator {
         background-color: $tab-bg-color-active;
+    }
+
+    label {
+        color: $label-text-color;
     }
 
     input[type=text]:focus:not([readonly]) + label,

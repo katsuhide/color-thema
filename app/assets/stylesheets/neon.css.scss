@@ -1,18 +1,18 @@
 // Black Blue
-$key-strong-color: #E64A19;
-$key-strong-color-lt: #8e6455;
 $key-color: #384877;
-$key-color-lt: #2A4D95;
-$key-color-ul: #5963A3;
-$accent-color: #D05DA1;
-$accent-color-lt: #D86CF1;
-$accent-color-ul: #9B93DD;
-$base-color: #333333;
-$sub-color: #292929;
-$sub-color-strong: #1C1C1C;
+$key-color-lt: #6076b4;
+$key-color-ul: #b1bcda;
+$accent-color: #E040FB;
+$accent-color-lt: rgba(255, 255, 255, 0.7);
+$accent-color-ul: rgba(255, 255, 255, 0.3);
+$base-color: rgba(255, 255, 255, 0.1);
+$sub-color: rgba(255, 255, 255, 0.5);
+$sub-color-strong: rgba(255, 255, 255, 0.3);;
 $text-color: #505050;
-$text-color-lt: #525252;
-$text-color-strong: #eb2d6e;
+$text-color-lt: #9c9c9c;
+$text-color-strong: #384877;
+$key-strong-color: rgba(255, 255, 255, 0.4);
+$key-strong-color-strong: rgba(224, 64, 251, 0.5);
 
 // Addtional Color
 // body
@@ -22,11 +22,12 @@ $divider-color: $sub-color-strong;
 
 // panel
 $panel-bg-color: $sub-color;
+$panel-br-color: $sub-color;
 $panel-text-color: $text-color;
 
 // nav bar
-$nav-bg-color: $key-color;
-$nav-bg-color-hover: $accent-color;
+$nav-bg-color: $key-strong-color;
+$nav-bg-color-hover: $key-strong-color-strong;
 $nav-text-color: $text-color-strong;
 
 // heading
@@ -67,7 +68,7 @@ $check-bg-color-disabled: $key-color-ul;
 
 // lsit
 $list-bg-color: $sub-color;
-$list-sr-color: $sub-color;
+$list-sr-color: transparent;
 $list-br-color: $base-color;
 $list-text-color: $text-color;
 $list-th-bg-color: $sub-color;
@@ -84,13 +85,13 @@ $table-bg-color: $sub-color;
 $table-text-color: $text-color;
 $table-th-bg-color: $key-color;
 $table-th-text-color: $text-color-lt;
-$table-tr-bg-color-striped: $sub-color-strong;
+$table-tr-bg-color-striped: $accent-color-ul;
 $table-tr-text-color-striped: $text-color;
-$table-tr-bg-color-hover: $accent-color-ul;
+$table-tr-bg-color-hover: $accent-color-lt;
 $table-tr-text-color-hover: $text-color;
 $page-text-color: $text-color;
-$page-bg-color-hover: $accent-color-ul;
-$page-bg-color-active: $accent-color;
+$page-bg-color-hover: $key-color-ul;
+$page-bg-color-active: $key-color-lt;
 
 // Setting
 @import "mapping";
@@ -111,15 +112,34 @@ body#neon {
         background: inherit;
     }
 
-    // nav
-    nav {
-        background: rgba(255, 255, 255, 0.4);
-        border: solid 1px rgba(255, 255, 255, 0.4);
+    // blur
+    .nav,
+    .card-panel,
+    table,
+    // .dropdown-content,
+    .collapsible-body,
+    .collection .collection-item {
+        background: inherit;
     }
 
-    // panel
-    .card-panel {
-        background: rgba(255, 255, 255, 0.4);
-        border: solid 1px rgba(255, 255, 255, 0.4);
+    .nav:before,
+    .card-panel:before,
+    table:before,
+    // .dropdown-content:before,
+    .collapsible-body:before,
+    .collection .collection-item:before {
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+    }
+
+    // table
+    table {
+        box-shadow: 0 2px 5px 0;
+    }
+
+    .collapsible,
+    .collection {
+        box-shadow: 0 2px 5px 0;
     }
 }
+

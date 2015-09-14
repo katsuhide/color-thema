@@ -6,6 +6,7 @@
 
     .card-panel {
         background-color: $panel-bg-color;
+        border: solid 1px $panel-br-color;
         color: $panel-text-color;
     }
 
@@ -156,13 +157,14 @@
 
     .collapsible,
     .collection {
-        border-color: $list-sr-color;
+        border: solid 1px $list-sr-color;
+        box-shadow: inherit;
     }
 
     .collapsible-body,
     .collection .collection-item {
         background-color: $list-bg-color;
-        border-color: $list-br-color;
+        border: solid 1px $list-br-color;
     }
 
     .collapsible-header,

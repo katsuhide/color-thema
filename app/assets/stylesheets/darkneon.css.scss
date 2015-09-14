@@ -1,18 +1,27 @@
-// Black Blue
-$key-color: #384877;
-$key-color-lt: #6076b4;
-$key-color-ul: #b1bcda;
-$accent-color: #E040FB;
-$accent-color-lt: rgba(255, 255, 255, 0.7);
-$accent-color-ul: rgba(255, 255, 255, 0.3);
-$base-color: rgba(255, 255, 255, 0.1);
-$sub-color: rgba(255, 255, 255, 0.5);
-$sub-color-strong: rgba(255, 255, 255, 0.3);;
-$text-color: #505050;
-$text-color-lt: #9c9c9c;
-$text-color-strong: #384877;
-$key-strong-color: rgba(255, 255, 255, 0.4);
-$key-strong-color-lt: rgba(224, 64, 251, 0.5);
+// Dark Neon
+//key=pink
+$key-color: #E91E63;
+$key-color-lt: #fde7ee;
+$key-color-ul: rgba(233, 30, 99, 0.3);
+
+//accent=blue
+$accent-color: #2ae7ff;
+$accent-color-lt: rgba(42, 231, 255, 0.7);
+$accent-color-ul: rgba(42, 231, 255, 0.3);
+$accent-color-lt: #7ff0ff;
+$accent-color-ul: #d4faff;
+
+// base/sub=black
+$base-color: rgba(34, 34, 34, 0.1);
+$sub-color: rgba(34, 34, 34, 0.8);
+
+// other
+$sub-color-strong: rgba(255, 255, 255, 0.3);
+$text-color: #B6B6B6;
+$text-color-lt: #727272;
+$text-color-strong: $accent-color;
+$key-strong-color: rgba(34, 34, 34, 0.7);
+$key-strong-color-lt: $key-color-ul;
 
 // Addtional Color
 // body
@@ -32,13 +41,13 @@ $nav-text-color: $text-color-strong;
 
 // heading
 $h-large-color: $text-color-strong;
-$h-small-color: $text-color;
+$h-small-color: $text-color-lt;
 
 // btn
 $btn-bg-color: $key-color;
-$btn-bg-color-hover: $key-color-lt;
-$btn-text-color: $text-color-lt;
-$btn-text-color-hover: $text-color-lt;
+$btn-bg-color-hover: $key-color-ul;
+$btn-text-color: $text-color;
+$btn-text-color-hover: $text-color;
 
 // tooltip
 $tooltip-text-color: $accent-color;
@@ -64,58 +73,55 @@ $prefix-text-color-hover: $key-color;
 $input-text-color-hover: $key-color;
 $check-bg-color: $key-color;
 $check-text-color: $text-color-lt;
-$check-bg-color-disabled: $key-color-ul;
+$check-bg-color-disabled: $key-color-lt;
 
 // lsit
 $list-bg-color: $sub-color;
+$list-th-bg-color: $sub-color;
+$list-bg-color-hover: $key-color-ul;
+$list-bg-color-active: $key-color-lt;
 $list-sr-color: transparent;
 $list-br-color: $base-color;
 $list-text-color: $text-color;
-$list-th-bg-color: $sub-color;
-$list-link-text-color: $accent-color;
-$list-bg-color-hover: $accent-color-ul;
+$list-link-text-color: $key-color;
 $list-text-color-hover: $text-color;
-$list-link-text-color-hover: $accent-color;
-$list-bg-color-active: $accent-color-lt;
+$list-link-text-color-hover: $key-color;
 $list-text-color-active: $text-color;
-$list-link-text-color-active: $text-color-lt;
+$list-link-text-color-active: $key-color;
 
 // table
 $table-bg-color: $sub-color;
+$table-th-bg-color: $sub-color;
+$table-tr-bg-color-striped: $base-color;
+$table-tr-bg-color-hover: $key-color-ul;
 $table-text-color: $text-color;
-$table-th-bg-color: $key-color;
-$table-th-text-color: $text-color-lt;
-$table-tr-bg-color-striped: $accent-color-ul;
+$table-th-text-color: $text-color;
 $table-tr-text-color-striped: $text-color;
-$table-tr-bg-color-hover: $accent-color-lt;
 $table-tr-text-color-hover: $text-color;
 $page-text-color: $text-color;
 $page-bg-color-hover: $key-color-ul;
 $page-bg-color-active: $key-color-lt;
 
+
 // Setting
 @import "mapping";
 
-body#neon {
-    // background-color: $body-bg-color;
-    background-image: linear-gradient(0deg, #E5B9CA, #BBDDF7);
+body#darkneon {
+    background-image: linear-gradient(0deg, #31373A, #171717);
     color: $body-text-color;
 }
 
-#neon {
+#darkneon {
     @include mapping;
 }
 
-#neon {
-    // tab
+#darkneon {
     .tabs {
         background: inherit;
     }
 
-    // blur
     .card-panel,
     table,
-    // .dropdown-content,
     .collapsible-body,
     .collection .collection-item {
         background: inherit;
@@ -123,21 +129,14 @@ body#neon {
 
     .card-panel:before,
     table:before,
-    // .dropdown-content:before,
     .collapsible-body:before,
     .collection .collection-item:before {
         -webkit-filter: blur(5px);
         filter: blur(5px);
     }
 
-    // table
-    table {
-        box-shadow: 0 2px 5px 0;
-    }
-
     .collapsible,
     .collection {
-        box-shadow: 0 2px 5px 0;
+        box-shadow: 0px 0px 5px $sub-color;
     }
 }
-

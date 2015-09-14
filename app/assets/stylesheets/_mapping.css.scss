@@ -31,6 +31,12 @@
         color: $h-large-color;
     }
 
+    h4,
+    h5,
+    h6 {
+        color: $h-small-color;
+    }
+
     .btn,
     .btn-large,
     .btn-floating {
@@ -118,6 +124,7 @@
     .switch label input[type=checkbox]:checked + .lever:after {
         background-color: $check-bg-color;
     }
+
     [type="checkbox"].filled-in:checked + label:before {
         border-right-color: $check-text-color;
         border-bottom-color: $check-text-color;

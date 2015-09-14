@@ -21,6 +21,9 @@ $ ->
     $("#style-neon").click ->
       $("body").attr "id", "neon"
 
+    $("#style-darkneon").click ->
+      $("body").attr "id", "darkneon"
+
 sideNavforIe = ->
   @obj = new IsIE()
   @isie = @obj.isIe()

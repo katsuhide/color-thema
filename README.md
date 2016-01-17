@@ -9,6 +9,6 @@
 * Dark Neon
 
 ## 対象ブラウザ
-* safari
-* chrome
+* Safari
+* Google Chrome
 * IE( > 11)

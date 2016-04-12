@@ -12,3 +12,4 @@
 * Safari
 * Google Chrome
 * IE( > 11)
+* Fire Fox

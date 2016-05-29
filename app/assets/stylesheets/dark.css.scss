@@ -1,0 +1,127 @@
+// Black
+$key-color: #bdbdbd;
+$key-color-lt: rgba(238, 238, 238, 0.7);
+$key-color-ul: rgba(238, 238, 238, 0.2);
+$accent-color: #536dfe;
+$accent-color-lt: #9fa8da;
+$accent-color-ul: #e8eaf6;
+$base-color: #333333;
+$sub-color: #292929;
+$sub-color-strong: #1C1C1C ;
+$text-color: #ADADAD;
+$text-color-lt: #525252;
+$text-color-strong: white;
+
+// Addtional Color
+// body
+$body-bg-color: $base-color;
+$body-text-color: $text-color;
+$divider-color: $sub-color-strong;
+
+// panel
+$panel-bg-color: $sub-color;
+$panel-br-color: $sub-color;
+$panel-text-color: $text-color;
+
+// nav bar
+$nav-bg-color: $key-color;
+$nav-bg-color-hover: $accent-color;
+$nav-text-color: $text-color-strong;
+
+// heading
+$h-large-color: $text-color-strong;
+$h-small-color: $text-color;
+
+// btn
+$btn-bg-color: $key-color;
+// $btn-bg-color-hover: $key-color-lt;
+$btn-bg-color-hover: $accent-color-lt;
+$btn-text-color: $text-color-lt;
+$btn-text-color-hover: $text-color-lt;
+
+// tooltip
+$tooltip-text-color: $accent-color;
+
+// toast
+$toast-bg-color: $base-color;
+$toast-text-color: $text-color;
+$toast-link-text-color: $accent-color;
+
+// blockquote
+$quote-color: $key-color;
+
+// tab
+$tab-bg-color: $base-color;
+$tab-bg-color-active: $key-color;
+$tab-text-color: $key-color;
+$tab-text-color-hover: $key-color-lt;
+$tab-text-color-disabled: $key-color-ul;
+
+// form
+$label-text-color: $text-color;
+// $prefix-text-color-hover: $key-color;
+// $input-text-color-hover: $key-color;
+// $check-bg-color: $key-color;
+$prefix-text-color-hover: $accent-color;
+$input-text-color-hover: $accent-color;
+$check-bg-color: $accent-color;
+$check-text-color: $text-color-lt;
+$check-bg-color-disabled: $key-color-ul;
+
+// lsit
+$list-bg-color: $sub-color;
+$list-sr-color: $sub-color;
+$list-br-color: $base-color;
+$list-text-color: $text-color;
+$list-th-bg-color: $sub-color;
+$list-link-text-color: $accent-color;
+// $list-bg-color-hover: $accent-color-ul;
+$list-bg-color-hover: $key-color-ul;
+$list-text-color-hover: $text-color;
+$list-link-text-color-hover: $accent-color;
+$list-bg-color-active: $accent-color-lt;
+$list-text-color-active: $text-color;
+$list-link-text-color-active: $text-color-lt;
+
+// table
+$table-bg-color: $sub-color;
+$table-text-color: $text-color;
+$table-th-bg-color: $key-color;
+$table-th-text-color: $text-color-lt;
+$table-tr-bg-color-striped: $sub-color-strong;
+$table-tr-text-color-striped: $text-color;
+// $table-tr-bg-color-hover: $accent-color-ul;
+$table-tr-bg-color-hover: $key-color-ul;
+$table-tr-text-color-hover: $text-color;
+$page-text-color: $text-color;
+// $page-bg-color-hover: $accent-color-ul;
+$page-bg-color-hover: $key-color-ul;
+$page-bg-color-active: $accent-color;
+
+// Setting
+@import "mapping";
+
+body#dark {
+    background-color: $body-bg-color;
+    color: $body-text-color;
+}
+
+#dark {
+    @include mapping;
+}
+
+#h-id {
+    border-bottom: 5px solid #64ffda;
+}
+#h-name {
+    border-bottom: 5px solid #ff4081;
+}
+#h-price {
+    border-bottom: 5px solid #40c4ff;
+}
+#h-value {
+    border-bottom: 5px solid #e040fb;
+}
+#h-hoge {
+    border-bottom: 5px solid #18ffff;
+}

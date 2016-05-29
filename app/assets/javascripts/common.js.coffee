@@ -15,6 +15,9 @@ $ ->
     $("#style-silver").click ->
       $("body").attr "id", "silver"
 
+    $("#style-dark").click ->
+      $("body").attr "id", "dark"
+
     $("#style-sand").click ->
       $("body").attr "id", "sand"
 
